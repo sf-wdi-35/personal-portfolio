@@ -2,13 +2,13 @@
 By the end of this course, you'll have built several projects that you'll want to show off during your job search. This project will set you up with a portfolio website that you can use to link to your other projects, and to highlight the skills that you bring to the job search.
 
 ## Timeline
-We'll work on this project 3 times this week: Monday, Tuesday, and Friday.
+We'll work on this project 3 times this week: Monday, Thursday, and Friday.
 
 ### Monday
-Monday is about making sure you have the basics: that you've forked the project to your own GitHub account, that you can clone that code and edit it, and that you've started editing the HTML file to add structure to your site. Make sure you get through the first part of the Git Training that's in this README, and add the project and contact info sections to your site. You can also start to add images and style your site. Add the link to your repo and your website in the [project submission Google doc](https://docs.google.com/spreadsheets/d/1eu4_B9iu1TBRsAgYUdpvb3Y949E8stqSo62SMnBPws8/edit#gid=0). (If you don't understand what these GitHub commands are doing, don't worry; we'll talk much more about GitHub tomorrow.)
+Monday is about making sure you have the basics: that you've forked the project to your own GitHub account, that you can clone that code and edit it, and that you've started editing the HTML file to add structure to your site. Make sure you get through the first part of the Git Training that's in this README, and add the project and contact info sections to your site. You can also start to add images and style your site. Add the link to your repo and your website in the [project submission Google doc](https://docs.google.com/spreadsheets/d/19baYsQr8BcsPz5E28qp1WYjeLUabz8B26EGnZEHQpmw/edit#gid=0). (If you don't understand what these GitHub commands are doing, don't worry; we'll talk much more about GitHub soon.)
 
-### Tuesday
-On Tuesday, you should deploy your site on GitHub. Finish the Git Training sections that are for Tuesday. You should also finish the structure of your site. The sections for your projects and your contact info should be finished, and you should have CSS to style them the way you want. You should have the pictures you want. At this point, you should be willing to show the site to someone else; even if it doesn't have many projects linked yet, it should "look" the way you want it to. (To start, include a link to the repo where you have this project!)
+### Thursday
+On Thursday, you should deploy your site on GitHub. Finish the Git Training sections that are for Thursday. You should also finish the structure of your site. The sections for your projects and your contact info should be finished, and you should have CSS to style them the way you want. You should have the pictures you want. At this point, you should be willing to show the site to someone else; even if it doesn't have many projects linked yet, it should "look" the way you want it to. (To start, include a link to the repo where you have this project!)
 
 ### Friday
 On Friday, add Javascript to your page. For example, you might have buttons to hide and show the different sections of your page, a place on your page that changes based on the date/time, the ability to search through your projects, or anything else that's interesting and relevant to you.
@@ -31,11 +31,11 @@ We're really looking forward to seeing what you've built by Friday! Please reach
 
 ## Learn Git Training
 
-You should finish the first part of this training on Monday, and the second part on Tuesday.
+You should finish the first part of this training on Monday, and the second part on Thursday.
 
 ### Monday Training
 
-1. Create a fork of [this](https://github.com/sf-wdi-LABS/personal-portfolio) by clicking "Fork" on the top right.
+1. Create a fork of this repo by clicking "Fork" on the top right.
 
   ![fork button](https://cloud.githubusercontent.com/assets/6520345/17564556/97ecdd00-5ee8-11e6-9ad0-a7b8104579ff.png)
 
@@ -49,6 +49,8 @@ You should finish the first part of this training on Monday, and the second part
   * Click the rename button.
 
 4. Go to the website `<username>.github.io`!  You have a web presence now!! It's not perfect, but it will be a work in progress over the whole course and it's an excellent start! If you want to change the content, you're going to need a copy on your own computer to edit and improve.
+
+>If your site isn't showing up, that's somewhat normal. You can try going back to the settings tab, and changing the theme of your page, which sometimes works to make the site show up. (Just go back and change the theme back after the page has shown up on github.io.)
 
 5. Click the clone or download button and copy the "clone URL."
 
@@ -74,34 +76,32 @@ You should finish the first part of this training on Monday, and the second part
   ➜  cd <username>.github.io
   ```
 
-6. Open this project in Atom.
+9. Open this project in Atom.
 
   ```zsh
   atom .
   ```
 
-1. Back in Atom, open `index.html`. Take a moment to read through index.html and answer these questions for yourself:
-  *
-  <details>
-    <summary>How many stylesheets does this webpage currently have? Where in the project can they be found and edited?</summary>
-    <p>There are two stylesheets, `normalize.css` and `main.css`. `normalize.css` is in the `vendor/css` folder because it's a file developed by somebody else (a vendor) and you won't be editing it. `main.css` is in the `assets/css` folder and is the custom styling that you'll spend time adjusting.</p>
-  </details>
-  *  
-  <details>
-    <summary>In the `<head>` element, change the `<title>` of the page. Where can you observe the impact of this change?</summary>
-    <p>On the tab in the browser, your site will display a new name. It used to be "First Training."</p>
-  </details>
-  *
-  <details>
-    <summary>If you were to write some Javascript to handle events on this page, what file would be the correct place to write that code?</summary>
-    <p>You'd want to write your custom JS in the `assets/js/app.js` file. Once this file grows big enough you might want to create new JS files in the `assets/js` folder.</p>
-  </details>
+10. Back in Atom, open `index.html`. Take a moment to read through index.html and answer these questions for yourself:
+<details>
+  <summary>How many stylesheets does this webpage currently have? Where in the project can they be found and edited?</summary>
+There are two stylesheets, normalize.css and main.css. normalize.css is in the vendor/css folder because it's a file developed by somebody else (a vendor) and you won't be editing it. main.css is in the assets/css folder and is the custom styling that you'll spend time adjusting.
+</details>
+<details>
+  <summary>In the <head> element, change the <title> of the page. Where can you observe the impact of this change?</summary>
+  <p>On the tab in the browser, your site will display a new name. It used to be "First Training."</p>
+</details>
 
-1. In the `<body>` of the document, replace the `<h1>` tag text with your name and add an image (or gif) of your liking using the `<img>` tag.
+<details>
+  <summary>If you were to write some Javascript to handle events on this page, what file would be the correct place to write that code?</summary>
+  <p>You'd want to write your custom JS in the assets/js/app.js file. Once this file grows big enough, you might want to create new JS files in the assets/js folder.</p>
+</details>
 
-1. Open the `index.html` file in Chrome to see what it looks like, and continue editing your site locally. Work on the structure of your site for the rest of today. We'll finish integrating with Github tomorrow.
+11. In the `<body>` of the document, replace the `<h1>` tag text with your name and add an image (or gif) of your liking using the `<img>` tag.
 
-### Tuesday training
+12. Open the `index.html` file in Chrome to see what it looks like, and continue editing your site locally. Work on the structure of your site for the rest of today. We'll finish integrating with Github next time.
+
+### Thursday training
 
 1. Now that you've changed the repo, it's time to commit your changes. Back in your terminal, type
 
@@ -110,7 +110,7 @@ You should finish the first part of this training on Monday, and the second part
   ```
   This shows you a list of the files that you modified, created, or deleted. Notice that they are listed as _"untracked"_.
 
-1. Now you're ready to `add` your changes. We generally do this file by file to be careful:
+2. Now you're ready to `add` your changes. We generally do this file by file to be careful:
   ```
   ➜  git add index.html
   ```
@@ -122,22 +122,22 @@ You should finish the first part of this training on Monday, and the second part
 
   Now enter `git status`. Notice that your new file has gone from _"untracked"_ to _"Changes to be committed"_.
 
-1. Next step is committing. Type the following:
+3. Next step is committing. Type the following:
 
   ```
   ➜  git commit -m "first edits to index.html"
   ```
   Now enter `git status` again. Notice that the new status is _"Your branch is ahead of 'origin/master' by 1 commit"_. This indicates that your the version of the repo on your computer (aka the __local__ version) includes your changes but the version hosted by GitHub (aka the __remote__ version) does not.
 
-1. To get your changes on to the remote version of the repo, type
+4. To get your changes on to the remote version of the repo, type
 
   ```
   ➜  git push origin master
   ```
 >***Note:*** *`origin` is the given name of the remote repository hosted on GitHub. `master` is the name of the main branch within the repository. (Typically `master` is the branch you update when you're ready to publish changes to the world.)*
 
-  Now `git status` will tell you that _"Your branch is up-to-date with 'origin/master"__ __!!!__
+  Now `git status` will tell you that _"Your branch is up-to-date with 'origin/master"_ __!!!__
 
-1. Visit `<username>.github.io` to see the latest version of your website!
+5. Visit `<username>.github.io` to see the latest version of your website!
 
-1. Continue editing your site, `commit`ing changes locally, and `push`ing to Github at least three times, adding different features every time, to improve your site and practice this Git workflow. You should finish making those edits and using `commit` and `push` at least 3 times before lunch. After lunch, we'll continue working on our sites, adding more styling, finishing the "Contact me" and "My work" sections, and updating the README.md file by the end of the day.
+6. Continue editing your site, `commit`ing changes locally, and `push`ing to Github at least three times, adding different features every time, to improve your site and practice this Git workflow. You should finish making those edits and using `commit` and `push` at least 3 times tonight.
